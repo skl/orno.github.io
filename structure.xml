@@ -194,7 +194,7 @@
   <file path="db/src/Orno/Db/Driver/Oci8.php" hash="5152c598f8bf427655d6c7241b58406c" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
@@ -214,10 +214,10 @@ transport cache.&lt;/p&gt;</long-description>
       </docblock>
       <property final="false" static="false" visibility="protected" line="29" namespace="Orno\Db\Driver" package="Default">
         <name>$connection</name>
-        <default></default>
+        <default/>
         <docblock line="24">
           <description>The Oci8 Connection Resource</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="24" name="var" description="" type="resource">
             <type by_reference="false">resource</type>
           </tag>
@@ -225,10 +225,10 @@ transport cache.&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="36" namespace="Orno\Db\Driver" package="Default">
         <name>$statement</name>
-        <default></default>
+        <default/>
         <docblock line="31">
           <description>The Statement Resource</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="31" name="var" description="" type="resource">
             <type by_reference="false">resource</type>
           </tag>
@@ -236,10 +236,10 @@ transport cache.&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="43" namespace="Orno\Db\Driver" package="Default">
         <name>$config</name>
-        <default></default>
+        <default/>
         <docblock line="38">
           <description>Configuration array</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -250,7 +250,7 @@ transport cache.&lt;/p&gt;</long-description>
         <default>false</default>
         <docblock line="45">
           <description>Should executions be auto commited?</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="45" name="var" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
@@ -261,7 +261,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>__construct</full_name>
         <docblock line="52">
           <description>Constructor</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="52" name="throws" description="" type="\Orno\Db\Exception\UnsupportedException">
             <type by_reference="false">\Orno\Db\Exception\UnsupportedException</type>
           </tag>
@@ -280,7 +280,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>connect</full_name>
         <docblock line="69">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="69" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
             <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
           </tag>
@@ -302,7 +302,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>disconnect</full_name>
         <docblock line="103">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="103" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
@@ -313,7 +313,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>prepareQuery</full_name>
         <docblock line="118">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="118" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
             <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
           </tag>
@@ -326,7 +326,7 @@ transport cache.&lt;/p&gt;</long-description>
         </docblock>
         <argument line="125">
           <name>$query</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -335,7 +335,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>bind</full_name>
         <docblock line="137">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="137" name="throws" description="" type="\Orno\Db\Exception\BindingException">
             <type by_reference="false">\Orno\Db\Exception\BindingException</type>
           </tag>
@@ -360,12 +360,12 @@ transport cache.&lt;/p&gt;</long-description>
         </docblock>
         <argument line="148">
           <name>$placeholder</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="148">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="148">
@@ -384,7 +384,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>execute</full_name>
         <docblock line="165">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="165" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -398,7 +398,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>transaction</full_name>
         <docblock line="182">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="182" name="return" description="" type="\Orno\Db\Driver\Oci8">
             <type by_reference="false">\Orno\Db\Driver\Oci8</type>
           </tag>
@@ -409,7 +409,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>setAutoCommit</full_name>
         <docblock line="194">
           <description>Set Auto Commit</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="194" name="param" description="" type="boolean" variable="$bool">
             <type by_reference="false">boolean</type>
           </tag>
@@ -439,7 +439,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>commit</full_name>
         <docblock line="217">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="228" package="Default">
@@ -447,7 +447,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>rollback</full_name>
         <docblock line="225">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="238" package="Default">
@@ -455,7 +455,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetch</full_name>
         <docblock line="233">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="233" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -466,7 +466,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetchObject</full_name>
         <docblock line="249">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="249" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -477,7 +477,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetchAll</full_name>
         <docblock line="265">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="265" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -2060,10 +2060,10 @@ a route based hook event&lt;/p&gt;</long-description>
       <todo line="141">Custom 404 routes</todo>
     </markers>
   </file>
-  <file path="mvc/src/Orno/Mvc/Route/Route.php" hash="c08d18be763474c64d322d5fa282f92a" package="Default">
+  <file path="mvc/src/Orno/Mvc/Route/Route.php" hash="c604c64a52e84cc986b4dffff956e033" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description/>
+      <long-description></long-description>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
@@ -2077,10 +2077,10 @@ a route based hook event&lt;/p&gt;</long-description>
       </docblock>
       <property final="false" static="false" visibility="protected" line="22" namespace="Orno\Mvc\Route" package="Default">
         <name>$route</name>
-        <default/>
+        <default></default>
         <docblock line="17">
           <description>The route path</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="17" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -2088,10 +2088,10 @@ a route based hook event&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="29" namespace="Orno\Mvc\Route" package="Default">
         <name>$segments</name>
-        <default/>
+        <default></default>
         <docblock line="24">
           <description>Array of segments in the route path</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="24" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -2099,10 +2099,10 @@ a route based hook event&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="36" namespace="Orno\Mvc\Route" package="Default">
         <name>$controller</name>
-        <default/>
+        <default></default>
         <docblock line="31">
           <description>Points to item registered with Orno\Di\Container</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="31" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -2110,10 +2110,10 @@ a route based hook event&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="43" namespace="Orno\Mvc\Route" package="Default">
         <name>$action</name>
-        <default/>
+        <default></default>
         <docblock line="38">
           <description>The name of the action to invoke</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="38" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -2121,10 +2121,10 @@ a route based hook event&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="50" namespace="Orno\Mvc\Route" package="Default">
         <name>$method</name>
-        <default/>
+        <default></default>
         <docblock line="45">
           <description>Will assume ANY method if null</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="45" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -2132,10 +2132,10 @@ a route based hook event&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="57" namespace="Orno\Mvc\Route" package="Default">
         <name>$closure</name>
-        <default/>
+        <default></default>
         <docblock line="52">
           <description>Is the controller a closure?</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="52" name="var" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
@@ -2146,7 +2146,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>__construct</full_name>
         <docblock line="59">
           <description>Constructor</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="59" name="param" description="" type="string" variable="$route">
             <type by_reference="false">string</type>
           </tag>
@@ -2189,92 +2189,92 @@ a route based hook event&lt;/p&gt;</long-description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="109" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="110" package="Default">
         <name>setSegments</name>
         <full_name>setSegments</full_name>
         <docblock line="102">
           <description>Set Segments</description>
           <long-description>&lt;p&gt;Explodes the route path in to segments&lt;/p&gt;</long-description>
+          <tag line="102" name="param" description="" type="string" variable="$route">
+            <type by_reference="false">string</type>
+          </tag>
           <tag line="102" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="109">
+        <argument line="110">
           <name>$route</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="121" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="122" package="Default">
         <name>getSegments</name>
         <full_name>getSegments</full_name>
-        <docblock line="114">
+        <docblock line="115">
           <description>Get Segments</description>
           <long-description>&lt;p&gt;Return the segments array&lt;/p&gt;</long-description>
-          <tag line="114" name="return" description="" type="array">
+          <tag line="115" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="133" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="134" package="Default">
         <name>getRoute</name>
         <full_name>getRoute</full_name>
-        <docblock line="126">
+        <docblock line="127">
           <description>Get Route</description>
           <long-description>&lt;p&gt;Return the route path string&lt;/p&gt;</long-description>
-          <tag line="126" name="return" description="" type="string">
+          <tag line="127" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="145" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="146" package="Default">
         <name>getController</name>
         <full_name>getController</full_name>
-        <docblock line="138">
+        <docblock line="139">
           <description>Get Controller</description>
           <long-description>&lt;p&gt;Return the controller name (alias registered with the container)&lt;/p&gt;</long-description>
-          <tag line="138" name="return" description="" type="string">
+          <tag line="139" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="157" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="158" package="Default">
         <name>getAction</name>
         <full_name>getAction</full_name>
-        <docblock line="150">
+        <docblock line="151">
           <description>Get Action</description>
           <long-description>&lt;p&gt;Return the action name&lt;/p&gt;</long-description>
-          <tag line="150" name="return" description="" type="string">
+          <tag line="151" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="169" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="170" package="Default">
         <name>getMethod</name>
         <full_name>getMethod</full_name>
-        <docblock line="162">
+        <docblock line="163">
           <description>Get Method</description>
           <long-description>&lt;p&gt;Return the HTTP method type&lt;/p&gt;</long-description>
-          <tag line="162" name="return" description="" type="string">
+          <tag line="163" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="179" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\Route" line="180" package="Default">
         <name>isClosure</name>
         <full_name>isClosure</full_name>
-        <docblock line="174">
+        <docblock line="175">
           <description>Is Closure?</description>
-          <long-description/>
-          <tag line="174" name="return" description="" type="boolean">
+          <long-description></long-description>
+          <tag line="175" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
       </method>
     </class>
-    <parse_markers>
-      <error line="102" code="50015">Argument $route is missing from the Docblock of setSegments()</error>
-    </parse_markers>
   </file>
   <file path="mvc/src/Orno/Mvc/Route/RouteCollection.php" hash="5ae586e1cc054042946262395e38b42e" package="Default">
     <docblock line="2">
@@ -3116,128 +3116,146 @@ a route based hook event&lt;/p&gt;</long-description>
       </docblock>
     </class>
   </file>
-  <file path="mvc/src/Orno/Mvc/View/JsonRenderer.php" hash="dd7f27624dabe5c9c8253987859bcc7f" package="Default">
+  <file path="mvc/src/Orno/Mvc/View/JsonRenderer.php" hash="89375e2a31bd0a0e32b29a4b93df2b7d" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description/>
+      <long-description></long-description>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
-    <class final="false" abstract="false" namespace="Orno\Mvc\View" line="13" package="Default">
+    <class final="false" abstract="false" namespace="Orno\Mvc\View" line="16" package="Default">
       <extends>\Orno\Mvc\View\AbstractRenderer</extends>
       <name>JsonRenderer</name>
       <full_name>\Orno\Mvc\View\JsonRenderer</full_name>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\View" line="18" package="Default">
+      <docblock line="13">
+        <description>Json Renderer</description>
+        <long-description></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\View" line="26" package="Default">
         <name>render</name>
         <full_name>render</full_name>
-        <docblock line="15">
-          <description>{@inheritdoc}</description>
-          <long-description/>
+        <docblock line="18">
+          <description>Render</description>
+          <long-description>&lt;p&gt;Returns a JSON string as a rendered view&lt;/p&gt;</long-description>
+          <tag line="18" name="param" description="Does nothing" type="string" variable="$layout">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="18" name="return" description="" type="\Symfony\Component\HttpFoundation\Response">
+            <type by_reference="false">\Symfony\Component\HttpFoundation\Response</type>
+          </tag>
         </docblock>
-        <argument line="18">
+        <argument line="26">
           <name>$layout</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
     </class>
-    <parse_markers>
-      <error line="13" code="50000">No DocBlock was found for \Orno\Mvc\View\JsonRenderer</error>
-      <error line="15" code="50015">Argument $layout is missing from the Docblock of render()</error>
-    </parse_markers>
   </file>
-  <file path="mvc/src/Orno/Mvc/View/Renderer.php" hash="594d9dc4e33759089e447e7e989bf462" package="Default">
+  <file path="mvc/src/Orno/Mvc/View/Renderer.php" hash="63e323ea524c7ca366065d7e7a531466" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description/>
+      <long-description></long-description>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
-    <include line="33" type="Include" package="Default">
+    <include line="42" type="Include" package="Default">
       <name/>
     </include>
-    <class final="false" abstract="false" namespace="Orno\Mvc\View" line="13" package="Default">
+    <class final="false" abstract="false" namespace="Orno\Mvc\View" line="18" package="Default">
       <extends>\Orno\Mvc\View\AbstractRenderer</extends>
       <name>Renderer</name>
       <full_name>\Orno\Mvc\View\Renderer</full_name>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\View" line="20" package="Default">
+      <docblock line="13">
+        <description>Renderer</description>
+        <long-description>&lt;p&gt;Main view renderer&lt;/p&gt;</long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\View" line="29" package="Default">
         <name>render</name>
         <full_name>render</full_name>
-        <docblock line="15">
-          <description>{@inheritdoc}</description>
-          <long-description/>
-          <tag line="15" name="throws" description="" type="\Orno\Mvc\View\Exception\LayoutNotProvidedException">
+        <docblock line="20">
+          <description>Render</description>
+          <long-description>&lt;p&gt;Renders a view script&lt;/p&gt;</long-description>
+          <tag line="20" name="throws" description="" type="\Orno\Mvc\View\Exception\LayoutNotProvidedException">
             <type by_reference="false">\Orno\Mvc\View\Exception\LayoutNotProvidedException</type>
           </tag>
+          <tag line="20" name="param" description="" type="string" variable="$layout">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="20" name="return" description="" type="\Symfony\Component\HttpFoundation\Response">
+            <type by_reference="false">\Symfony\Component\HttpFoundation\Response</type>
+          </tag>
         </docblock>
-        <argument line="20">
+        <argument line="29">
           <name>$layout</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
     </class>
-    <parse_markers>
-      <error line="13" code="50000">No DocBlock was found for \Orno\Mvc\View\Renderer</error>
-      <error line="15" code="50015">Argument $layout is missing from the Docblock of render()</error>
-    </parse_markers>
   </file>
-  <file path="mvc/src/Orno/Mvc/View/XmlRenderer.php" hash="cc78f49ce9cfa3e34bd65cd5868a757a" package="Default">
+  <file path="mvc/src/Orno/Mvc/View/XmlRenderer.php" hash="950fe9e6890bce1fbedcac948f458c15" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description/>
+      <long-description></long-description>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
-    <class final="false" abstract="false" namespace="Orno\Mvc\View" line="14" package="Default">
+    <class final="false" abstract="false" namespace="Orno\Mvc\View" line="17" package="Default">
       <extends>\Orno\Mvc\View\AbstractRenderer</extends>
       <name>XmlRenderer</name>
       <full_name>\Orno\Mvc\View\XmlRenderer</full_name>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\View" line="19" package="Default">
+      <docblock line="14">
+        <description>XML Renderer</description>
+        <long-description></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\View" line="27" package="Default">
         <name>render</name>
         <full_name>render</full_name>
-        <docblock line="16">
-          <description>{@inheritdoc}</description>
-          <long-description/>
+        <docblock line="19">
+          <description>Render</description>
+          <long-description>&lt;p&gt;Renders an XML document&lt;/p&gt;</long-description>
+          <tag line="19" name="param" description="Does nothing" type="string" variable="$layout">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="19" name="return" description="" type="\Symfony\Component\HttpFoundation\Response">
+            <type by_reference="false">\Symfony\Component\HttpFoundation\Response</type>
+          </tag>
         </docblock>
-        <argument line="19">
+        <argument line="27">
           <name>$layout</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\View" line="37" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Mvc\View" line="45" package="Default">
         <name>arrayToXml</name>
         <full_name>arrayToXml</full_name>
-        <docblock line="28">
+        <docblock line="36">
           <description>Array to XML</description>
           <long-description>&lt;p&gt;Walk array and build SimpleXML object&lt;/p&gt;</long-description>
-          <tag line="28" name="param" description="" type="array" variable="$array">
+          <tag line="36" name="param" description="" type="array" variable="$array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="28" name="param" description="" type="\SimpleXMLElement" variable="$node">
+          <tag line="36" name="param" description="" type="\SimpleXMLElement" variable="$node">
             <type by_reference="false">\SimpleXMLElement</type>
           </tag>
-          <tag line="28" name="return" description="" type="void">
+          <tag line="36" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="37">
+        <argument line="45">
           <name>$array</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="37">
+        <argument line="45">
           <name>$node</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
     </class>
-    <parse_markers>
-      <error line="14" code="50000">No DocBlock was found for \Orno\Mvc\View\XmlRenderer</error>
-      <error line="16" code="50015">Argument $layout is missing from the Docblock of render()</error>
-    </parse_markers>
   </file>
   <package name="Default" full_name="Default"/>
   <namespace name="Orno" full_name="Orno">
