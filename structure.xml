@@ -191,7 +191,7 @@
       </method>
     </interface>
   </file>
-  <file path="db/src/Orno/Db/Driver/Oci8.php" hash="aab76988f61e9deb26742382d0b86239" package="Default">
+  <file path="db/src/Orno/Db/Driver/Oci8.php" hash="5152c598f8bf427655d6c7241b58406c" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
       <long-description></long-description>
@@ -209,7 +209,7 @@
 
 &lt;p&gt;Note: It is recommended, for performance improvements, to set the oci8.default_prefetch
 option in your php.ini. This will significantly improve network performance as it
-will reduce the number of round trips on the network by buffering rows into the SLQ*Net
+will reduce the number of round trips on the network by buffering rows into the SQL*Net
 transport cache.&lt;/p&gt;</long-description>
       </docblock>
       <property final="false" static="false" visibility="protected" line="29" namespace="Orno\Db\Driver" package="Default">
@@ -488,7 +488,7 @@ transport cache.&lt;/p&gt;</long-description>
   <file path="db/src/Orno/Db/Driver/Pdo.php" hash="2db7f74a9b41596a196a2c828c895fd7" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
@@ -503,10 +503,10 @@ transport cache.&lt;/p&gt;</long-description>
       </docblock>
       <property final="false" static="false" visibility="protected" line="24" namespace="Orno\Db\Driver" package="Default">
         <name>$connection</name>
-        <default></default>
+        <default/>
         <docblock line="19">
           <description>The PDO object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="19" name="var" description="" type="\PDO">
             <type by_reference="false">\PDO</type>
           </tag>
@@ -514,10 +514,10 @@ transport cache.&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="31" namespace="Orno\Db\Driver" package="Default">
         <name>$statement</name>
-        <default></default>
+        <default/>
         <docblock line="26">
           <description>The PDO statement object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="26" name="var" description="" type="\PDOStatement">
             <type by_reference="false">\PDOStatement</type>
           </tag>
@@ -525,10 +525,10 @@ transport cache.&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="38" namespace="Orno\Db\Driver" package="Default">
         <name>$config</name>
-        <default></default>
+        <default/>
         <docblock line="33">
           <description>Configuration array</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="33" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -539,7 +539,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>__construct</full_name>
         <docblock line="40">
           <description>Constructor</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="40" name="throws" description="" type="\Orno\Db\Exception\UnsupportedException">
             <type by_reference="false">\Orno\Db\Exception\UnsupportedException</type>
           </tag>
@@ -558,7 +558,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>connect</full_name>
         <docblock line="57">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="57" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
             <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
           </tag>
@@ -580,7 +580,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>disconnect</full_name>
         <docblock line="94">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="94" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
@@ -591,7 +591,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>prepareQuery</full_name>
         <docblock line="105">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="105" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
             <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
           </tag>
@@ -604,7 +604,7 @@ transport cache.&lt;/p&gt;</long-description>
         </docblock>
         <argument line="112">
           <name>$query</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -613,7 +613,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>bind</full_name>
         <docblock line="125">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="125" name="throws" description="" type="\Orno\Db\Exception\BindingException">
             <type by_reference="false">\Orno\Db\Exception\BindingException</type>
           </tag>
@@ -638,12 +638,12 @@ transport cache.&lt;/p&gt;</long-description>
         </docblock>
         <argument line="136">
           <name>$placeholder</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="136">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="136">
@@ -662,7 +662,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>execute</full_name>
         <docblock line="157">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="157" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -676,7 +676,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>transaction</full_name>
         <docblock line="174">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="174" name="return" description="" type="\Orno\Db\Driver\Pdo">
             <type by_reference="false">\Orno\Db\Driver\Pdo</type>
           </tag>
@@ -687,7 +687,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>commit</full_name>
         <docblock line="186">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="197" package="Default">
@@ -695,7 +695,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>rollback</full_name>
         <docblock line="194">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="207" package="Default">
@@ -703,7 +703,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetch</full_name>
         <docblock line="202">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="202" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -714,7 +714,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetchObject</full_name>
         <docblock line="218">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="218" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -725,7 +725,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetchAll</full_name>
         <docblock line="234">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="234" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
