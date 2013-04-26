@@ -1496,7 +1496,7 @@ before returning an instance of the item&lt;/p&gt;</long-description>
       </method>
     </class>
   </file>
-  <file path="loader/src/Orno/Loader/Autoloader.php" hash="01c6b44415a55d1bee873389ef7f7890" package="Default">
+  <file path="loader/src/Orno/Loader/Autoloader.php" hash="f250bd876f5772537f76f564797ee11d" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
       <long-description></long-description>
@@ -1624,7 +1624,7 @@ before returning an instance of the item&lt;/p&gt;</long-description>
         <name>getNamespaces</name>
         <full_name>getNamespaces</full_name>
         <docblock line="106">
-          <description>get Namespaces</description>
+          <description>Get Namespaces</description>
           <long-description>&lt;p&gt;Returns the namespace registry array&lt;/p&gt;</long-description>
           <tag line="106" name="return" description="" type="array">
             <type by_reference="false">array</type>
