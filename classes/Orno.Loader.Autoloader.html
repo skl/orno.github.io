@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Orno\Loader\Autoloader</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Orno.html"><i class="icon-th"></i> Orno</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_autoload" title="autoload :: Autoload"><span class="description">Autoload</span><pre>autoload()</pre></a></li>
+<li class="method public "><a href="#method_classToFile" title="classToFile :: Class to File"><span class="description">Class to File</span><pre>classToFile()</pre></a></li>
+<li class="method public "><a href="#method_getClasses" title="getClasses :: Get Classes"><span class="description">Get Classes</span><pre>getClasses()</pre></a></li>
+<li class="method public "><a href="#method_getNamespaces" title="getNamespaces :: get Namespaces"><span class="description">get Namespaces</span><pre>getNamespaces()</pre></a></li>
+<li class="method public "><a href="#method_getPrefixes" title="getPrefixes :: Get Prefixes"><span class="description">Get Prefixes</span><pre>getPrefixes()</pre></a></li>
+<li class="method public "><a href="#method_isLoaded" title="isLoaded :: Is Loaded?"><span class="description">Is Loaded?</span><pre>isLoaded()</pre></a></li>
+<li class="method public "><a href="#method_register" title="register :: Register"><span class="description">Register</span><pre>register()</pre></a></li>
+<li class="method public "><a href="#method_registerClasses" title="registerClasses :: Register Classes"><span class="description">Register Classes</span><pre>registerClasses()</pre></a></li>
+<li class="method public "><a href="#method_registerNamespaces" title="registerNamespaces :: Register Namespaces"><span class="description">Register Namespaces</span><pre>registerNamespaces()</pre></a></li>
+<li class="method public "><a href="#method_registerPrefixes" title="registerPrefixes :: Register Prefixes"><span class="description">Register Prefixes</span><pre>registerPrefixes()</pre></a></li>
+<li class="method public "><a href="#method_resolveFile" title="resolveFile :: Resolve File"><span class="description">Resolve File</span><pre>resolveFile()</pre></a></li>
+<li class="method public "><a href="#method_unregister" title="unregister :: Unregister"><span class="description">Unregister</span><pre>unregister()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_classes" title="$classes :: Array of registered class locations"><span class="description"></span><pre>$classes</pre></a></li>
+<li class="property protected "><a href="#property_namespaces" title="$namespaces :: Array of registered namespace =&gt; path pairs"><span class="description"></span><pre>$namespaces</pre></a></li>
+<li class="property protected "><a href="#property_prefixes" title="$prefixes :: Array of registered prefix =&gt; path pairs"><span class="description"></span><pre>$prefixes</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Orno\Loader\Autoloader"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Orno.html">Orno</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Orno.Loader.html">Loader</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Orno.Loader.Autoloader.html">Autoloader</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Autoloader</p>
+<div class="details">
+<div class="long_description"><p>An autoloader object allowing a project to adhere to PSR-0</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct(array $config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_autoload"></a><div class="element clickable method public method_autoload" data-toggle="collapse" data-target=".method_autoload .collapse">
+<h2>Autoload</h2>
+<pre>autoload(string $class) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Autoload method to be registered with the spl autoload stack</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_classToFile"></a><div class="element clickable method public method_classToFile" data-toggle="collapse" data-target=".method_classToFile .collapse">
+<h2>Class to File</h2>
+<pre>classToFile(string $class) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Converts a class name to a filename</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getClasses"></a><div class="element clickable method public method_getClasses" data-toggle="collapse" data-target=".method_getClasses .collapse">
+<h2>Get Classes</h2>
+<pre>getClasses() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Returns the class registry array</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getNamespaces"></a><div class="element clickable method public method_getNamespaces" data-toggle="collapse" data-target=".method_getNamespaces .collapse">
+<h2>get Namespaces</h2>
+<pre>getNamespaces() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Returns the namespace registry array</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getPrefixes"></a><div class="element clickable method public method_getPrefixes" data-toggle="collapse" data-target=".method_getPrefixes .collapse">
+<h2>Get Prefixes</h2>
+<pre>getPrefixes() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Returns the prefix registry array</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_isLoaded"></a><div class="element clickable method public method_isLoaded" data-toggle="collapse" data-target=".method_isLoaded .collapse">
+<h2>Is Loaded?</h2>
+<pre>isLoaded(string $class) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Checks to see if a class is already loaded</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_register"></a><div class="element clickable method public method_register" data-toggle="collapse" data-target=".method_register .collapse">
+<h2>Register</h2>
+<pre>register(boolean $prepend) : \Orno\Loader\Orno\Loader\Autoloader</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Registers this autoloader with the spl autoload stack</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$prepend</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Orno\Loader\Orno\Loader\Autoloader</code></div>
+</div></div>
+</div>
+<a id="method_registerClasses"></a><div class="element clickable method public method_registerClasses" data-toggle="collapse" data-target=".method_registerClasses .collapse">
+<h2>Register Classes</h2>
+<pre>registerClasses(array $classes) : <a href="../classes/Orno.Loader.Autoloader.html">\Orno\Loader\Autoloader</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Register a direct path to a class with the autoloader</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$classes</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Orno.Loader.Autoloader.html">\Orno\Loader\Autoloader</a></code></div>
+</div></div>
+</div>
+<a id="method_registerNamespaces"></a><div class="element clickable method public method_registerNamespaces" data-toggle="collapse" data-target=".method_registerNamespaces .collapse">
+<h2>Register Namespaces</h2>
+<pre>registerNamespaces(array $namespaces) : <a href="../classes/Orno.Loader.Autoloader.html">\Orno\Loader\Autoloader</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Register a namespace => path pair with the autoloader</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$namespaces</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Orno.Loader.Autoloader.html">\Orno\Loader\Autoloader</a></code></div>
+</div></div>
+</div>
+<a id="method_registerPrefixes"></a><div class="element clickable method public method_registerPrefixes" data-toggle="collapse" data-target=".method_registerPrefixes .collapse">
+<h2>Register Prefixes</h2>
+<pre>registerPrefixes(array $prefixes) : <a href="../classes/Orno.Loader.Autoloader.html">\Orno\Loader\Autoloader</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Register a prefix => path pair with the autoloader</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$prefixes</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Orno.Loader.Autoloader.html">\Orno\Loader\Autoloader</a></code></div>
+</div></div>
+</div>
+<a id="method_resolveFile"></a><div class="element clickable method public method_resolveFile" data-toggle="collapse" data-target=".method_resolveFile .collapse">
+<h2>Resolve File</h2>
+<pre>resolveFile(string $class) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Resolves a class file from a provided class</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_unregister"></a><div class="element clickable method public method_unregister" data-toggle="collapse" data-target=".method_unregister .collapse">
+<h2>Unregister</h2>
+<pre>unregister() : \Orno\Loader\Orno\Loader\Autoloader</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Unregisters this autoloader from the spl autoload stack</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Orno\Loader\Orno\Loader\Autoloader</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_classes"> </a><div class="element clickable property protected property_classes" data-toggle="collapse" data-target=".property_classes .collapse">
+<h2></h2>
+<pre>$classes : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_namespaces"> </a><div class="element clickable property protected property_namespaces" data-toggle="collapse" data-target=".property_namespaces .collapse">
+<h2></h2>
+<pre>$namespaces : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_prefixes"> </a><div class="element clickable property protected property_prefixes" data-toggle="collapse" data-target=".property_prefixes .collapse">
+<h2></h2>
+<pre>$prefixes : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-26T13:13:45+01:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -3,7 +3,7 @@
   <file path="db/src/Orno/Db/Driver/DriverInterface.php" hash="da5ce7cf3aa906a530f6303be1cb7f9c" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
@@ -53,7 +53,7 @@
         </docblock>
         <argument line="42">
           <name>$query</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -78,22 +78,22 @@
         </docblock>
         <argument line="54">
           <name>$placeholder</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="54">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="54">
           <name>$type</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="54">
           <name>$maxlen</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -194,7 +194,7 @@
   <file path="db/src/Orno/Db/Driver/Oci8.php" hash="f35f1581c033e864d0cb325bce55024b" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
@@ -214,10 +214,10 @@ transport cache.&lt;/p&gt;</long-description>
       </docblock>
       <property final="false" static="false" visibility="protected" line="29" namespace="Orno\Db\Driver" package="Default">
         <name>$connection</name>
-        <default></default>
+        <default/>
         <docblock line="24">
           <description>The Oci8 Connection Resource</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="24" name="var" description="" type="resource">
             <type by_reference="false">resource</type>
           </tag>
@@ -225,10 +225,10 @@ transport cache.&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="36" namespace="Orno\Db\Driver" package="Default">
         <name>$statement</name>
-        <default></default>
+        <default/>
         <docblock line="31">
           <description>The Statement Resource</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="31" name="var" description="" type="resource">
             <type by_reference="false">resource</type>
           </tag>
@@ -239,7 +239,7 @@ transport cache.&lt;/p&gt;</long-description>
         <default>false</default>
         <docblock line="38">
           <description>Should executions be auto commited?</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="var" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
@@ -250,7 +250,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>__construct</full_name>
         <docblock line="45">
           <description>Constructor</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="45" name="throws" description="" type="\Orno\Db\Exception\UnsupportedException">
             <type by_reference="false">\Orno\Db\Exception\UnsupportedException</type>
           </tag>
@@ -269,7 +269,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>connect</full_name>
         <docblock line="62">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="62" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
             <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
           </tag>
@@ -291,7 +291,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>disconnect</full_name>
         <docblock line="92">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="92" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
@@ -302,7 +302,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>prepareQuery</full_name>
         <docblock line="107">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="107" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
             <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
           </tag>
@@ -315,7 +315,7 @@ transport cache.&lt;/p&gt;</long-description>
         </docblock>
         <argument line="114">
           <name>$query</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -324,7 +324,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>bind</full_name>
         <docblock line="124">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="124" name="throws" description="" type="\Orno\Db\Exception\BindingException">
             <type by_reference="false">\Orno\Db\Exception\BindingException</type>
           </tag>
@@ -349,12 +349,12 @@ transport cache.&lt;/p&gt;</long-description>
         </docblock>
         <argument line="135">
           <name>$placeholder</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="135">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="135">
@@ -373,7 +373,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>execute</full_name>
         <docblock line="152">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="152" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -387,7 +387,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>transaction</full_name>
         <docblock line="169">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="169" name="return" description="" type="\Orno\Db\Driver\Oci8">
             <type by_reference="false">\Orno\Db\Driver\Oci8</type>
           </tag>
@@ -398,7 +398,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>setAutoCommit</full_name>
         <docblock line="180">
           <description>Set Auto Commit</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="180" name="param" description="" type="boolean" variable="$bool">
             <type by_reference="false">boolean</type>
           </tag>
@@ -428,7 +428,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>commit</full_name>
         <docblock line="203">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="214" package="Default">
@@ -436,7 +436,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>rollback</full_name>
         <docblock line="211">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="224" package="Default">
@@ -444,7 +444,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetch</full_name>
         <docblock line="219">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="219" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -455,7 +455,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetchObject</full_name>
         <docblock line="235">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="235" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -466,7 +466,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetchAll</full_name>
         <docblock line="251">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="251" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -477,7 +477,7 @@ transport cache.&lt;/p&gt;</long-description>
   <file path="db/src/Orno/Db/Driver/Pdo.php" hash="3bbcb5be1549f47d2c7b71c605ab15a7" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
@@ -492,10 +492,10 @@ transport cache.&lt;/p&gt;</long-description>
       </docblock>
       <property final="false" static="false" visibility="protected" line="24" namespace="Orno\Db\Driver" package="Default">
         <name>$connection</name>
-        <default></default>
+        <default/>
         <docblock line="19">
           <description>The Oci8 Connection Resource</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="19" name="var" description="" type="resource">
             <type by_reference="false">resource</type>
           </tag>
@@ -503,10 +503,10 @@ transport cache.&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="protected" line="31" namespace="Orno\Db\Driver" package="Default">
         <name>$statement</name>
-        <default></default>
+        <default/>
         <docblock line="26">
           <description>The Statement Resource</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="26" name="var" description="" type="resource">
             <type by_reference="false">resource</type>
           </tag>
@@ -517,7 +517,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>__construct</full_name>
         <docblock line="33">
           <description>Constructor</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="33" name="throws" description="" type="\Orno\Db\Exception\UnsupportedException">
             <type by_reference="false">\Orno\Db\Exception\UnsupportedException</type>
           </tag>
@@ -536,7 +536,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>connect</full_name>
         <docblock line="50">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="50" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
             <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
           </tag>
@@ -558,7 +558,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>disconnect</full_name>
         <docblock line="83">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="83" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
@@ -569,7 +569,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>prepareQuery</full_name>
         <docblock line="94">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="94" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
             <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
           </tag>
@@ -582,7 +582,7 @@ transport cache.&lt;/p&gt;</long-description>
         </docblock>
         <argument line="101">
           <name>$query</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -591,7 +591,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>bind</full_name>
         <docblock line="112">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="112" name="throws" description="" type="\Orno\Db\Exception\BindingException">
             <type by_reference="false">\Orno\Db\Exception\BindingException</type>
           </tag>
@@ -616,12 +616,12 @@ transport cache.&lt;/p&gt;</long-description>
         </docblock>
         <argument line="123">
           <name>$placeholder</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="123">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="123">
@@ -640,7 +640,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>execute</full_name>
         <docblock line="144">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="144" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -654,7 +654,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>transaction</full_name>
         <docblock line="161">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="161" name="return" description="" type="\Orno\Db\Driver\Pdo">
             <type by_reference="false">\Orno\Db\Driver\Pdo</type>
           </tag>
@@ -665,7 +665,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>commit</full_name>
         <docblock line="172">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="183" package="Default">
@@ -673,7 +673,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>rollback</full_name>
         <docblock line="180">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="193" package="Default">
@@ -681,7 +681,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetch</full_name>
         <docblock line="188">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="188" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -692,7 +692,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetchObject</full_name>
         <docblock line="204">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="204" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -703,7 +703,7 @@ transport cache.&lt;/p&gt;</long-description>
         <full_name>fetchAll</full_name>
         <docblock line="220">
           <description>{@inheritdoc}</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="220" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
             <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
           </tag>
@@ -782,7 +782,7 @@ transport cache.&lt;/p&gt;</long-description>
   <file path="db/src/Orno/Db/Query.php" hash="3f77fb83dae696051cae3f14be9047a5" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
@@ -797,10 +797,10 @@ ANSI/ISO SQL without object oriented query building with support for transaction
       </docblock>
       <property final="false" static="false" visibility="protected" line="23" namespace="Orno\Db" package="Default">
         <name>$driver</name>
-        <default></default>
+        <default/>
         <docblock line="18">
           <description>Database connection driver</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="18" name="var" description="" type="\Orno\Db\Driver\DriverInterface">
             <type by_reference="false">\Orno\Db\Driver\DriverInterface</type>
           </tag>
@@ -811,14 +811,14 @@ ANSI/ISO SQL without object oriented query building with support for transaction
         <full_name>__construct</full_name>
         <docblock line="25">
           <description>Constructor</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="25" name="param" description="" type="\Orno\Db\Driver\DriverInterface" variable="$driver">
             <type by_reference="false">\Orno\Db\Driver\DriverInterface</type>
           </tag>
         </docblock>
         <argument line="30">
           <name>$driver</name>
-          <default></default>
+          <default/>
           <type>\Orno\Db\Driver\DriverInterface</type>
         </argument>
       </method>
@@ -1496,6 +1496,271 @@ before returning an instance of the item&lt;/p&gt;</long-description>
       </method>
     </class>
   </file>
+  <file path="loader/src/Orno/Loader/Autoloader.php" hash="01c6b44415a55d1bee873389ef7f7890" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <include line="224" type="Include" package="Default">
+      <name/>
+    </include>
+    <class final="false" abstract="false" namespace="Orno\Loader" line="15" package="Default">
+      <extends/>
+      <name>Autoloader</name>
+      <full_name>\Orno\Loader\Autoloader</full_name>
+      <docblock line="10">
+        <description>Autoloader</description>
+        <long-description>&lt;p&gt;An autoloader object allowing a project to adhere to PSR-0&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="22" namespace="Orno\Loader" package="Default">
+        <name>$namespaces</name>
+        <default>array()</default>
+        <docblock line="17">
+          <description>Array of registered namespace =&gt; path pairs</description>
+          <long-description></long-description>
+          <tag line="17" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="29" namespace="Orno\Loader" package="Default">
+        <name>$prefixes</name>
+        <default>array()</default>
+        <docblock line="24">
+          <description>Array of registered prefix =&gt; path pairs</description>
+          <long-description></long-description>
+          <tag line="24" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="36" namespace="Orno\Loader" package="Default">
+        <name>$classes</name>
+        <default>array()</default>
+        <docblock line="31">
+          <description>Array of registered class locations</description>
+          <long-description></long-description>
+          <tag line="31" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="43" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="38">
+          <description>Constructor</description>
+          <long-description></long-description>
+          <tag line="38" name="param" description="" type="array" variable="$config">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="43">
+          <name>$config</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="66" package="Default">
+        <name>registerNamespaces</name>
+        <full_name>registerNamespaces</full_name>
+        <docblock line="58">
+          <description>Register Namespaces</description>
+          <long-description>&lt;p&gt;Register a namespace =&gt; path pair with the autoloader&lt;/p&gt;</long-description>
+          <tag line="58" name="param" description="" type="array" variable="$namespaces">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="58" name="return" description="" type="\Orno\Loader\Autoloader">
+            <type by_reference="false">\Orno\Loader\Autoloader</type>
+          </tag>
+        </docblock>
+        <argument line="66">
+          <name>$namespaces</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="82" package="Default">
+        <name>registerPrefixes</name>
+        <full_name>registerPrefixes</full_name>
+        <docblock line="74">
+          <description>Register Prefixes</description>
+          <long-description>&lt;p&gt;Register a prefix =&gt; path pair with the autoloader&lt;/p&gt;</long-description>
+          <tag line="74" name="param" description="" type="array" variable="$prefixes">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="74" name="return" description="" type="\Orno\Loader\Autoloader">
+            <type by_reference="false">\Orno\Loader\Autoloader</type>
+          </tag>
+        </docblock>
+        <argument line="82">
+          <name>$prefixes</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="98" package="Default">
+        <name>registerClasses</name>
+        <full_name>registerClasses</full_name>
+        <docblock line="90">
+          <description>Register Classes</description>
+          <long-description>&lt;p&gt;Register a direct path to a class with the autoloader&lt;/p&gt;</long-description>
+          <tag line="90" name="param" description="" type="array" variable="$classes">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="90" name="return" description="" type="\Orno\Loader\Autoloader">
+            <type by_reference="false">\Orno\Loader\Autoloader</type>
+          </tag>
+        </docblock>
+        <argument line="98">
+          <name>$classes</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="113" package="Default">
+        <name>getNamespaces</name>
+        <full_name>getNamespaces</full_name>
+        <docblock line="106">
+          <description>get Namespaces</description>
+          <long-description>&lt;p&gt;Returns the namespace registry array&lt;/p&gt;</long-description>
+          <tag line="106" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="125" package="Default">
+        <name>getPrefixes</name>
+        <full_name>getPrefixes</full_name>
+        <docblock line="118">
+          <description>Get Prefixes</description>
+          <long-description>&lt;p&gt;Returns the prefix registry array&lt;/p&gt;</long-description>
+          <tag line="118" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="137" package="Default">
+        <name>getClasses</name>
+        <full_name>getClasses</full_name>
+        <docblock line="130">
+          <description>Get Classes</description>
+          <long-description>&lt;p&gt;Returns the class registry array&lt;/p&gt;</long-description>
+          <tag line="130" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="150" package="Default">
+        <name>resolveFile</name>
+        <full_name>resolveFile</full_name>
+        <docblock line="142">
+          <description>Resolve File</description>
+          <long-description>&lt;p&gt;Resolves a class file from a provided class&lt;/p&gt;</long-description>
+          <tag line="142" name="param" description="" type="string" variable="$class">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="142" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="150">
+          <name>$class</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="188" package="Default">
+        <name>classToFile</name>
+        <full_name>classToFile</full_name>
+        <docblock line="180">
+          <description>Class to File</description>
+          <long-description>&lt;p&gt;Converts a class name to a filename&lt;/p&gt;</long-description>
+          <tag line="180" name="param" description="" type="string" variable="$class">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="180" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="188">
+          <name>$class</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="201" package="Default">
+        <name>isLoaded</name>
+        <full_name>isLoaded</full_name>
+        <docblock line="193">
+          <description>Is Loaded?</description>
+          <long-description>&lt;p&gt;Checks to see if a class is already loaded&lt;/p&gt;</long-description>
+          <tag line="193" name="param" description="" type="string" variable="$class">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="193" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="201">
+          <name>$class</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="214" package="Default">
+        <name>autoload</name>
+        <full_name>autoload</full_name>
+        <docblock line="206">
+          <description>Autoload</description>
+          <long-description>&lt;p&gt;Autoload method to be registered with the spl autoload stack&lt;/p&gt;</long-description>
+          <tag line="206" name="param" description="" type="string" variable="$class">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="206" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="214">
+          <name>$class</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="237" package="Default">
+        <name>register</name>
+        <full_name>register</full_name>
+        <docblock line="229">
+          <description>Register</description>
+          <long-description>&lt;p&gt;Registers this autoloader with the spl autoload stack&lt;/p&gt;</long-description>
+          <tag line="229" name="param" description="" type="boolean" variable="$prepend">
+            <type by_reference="false">boolean</type>
+          </tag>
+          <tag line="229" name="return" description="" type="\Orno\Loader\Orno\Loader\Autoloader">
+            <type by_reference="false">\Orno\Loader\Orno\Loader\Autoloader</type>
+          </tag>
+        </docblock>
+        <argument line="237">
+          <name>$prepend</name>
+          <default>true</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Loader" line="250" package="Default">
+        <name>unregister</name>
+        <full_name>unregister</full_name>
+        <docblock line="243">
+          <description>Unregister</description>
+          <long-description>&lt;p&gt;Unregisters this autoloader from the spl autoload stack&lt;/p&gt;</long-description>
+          <tag line="243" name="return" description="" type="\Orno\Loader\Orno\Loader\Autoloader">
+            <type by_reference="false">\Orno\Loader\Orno\Loader\Autoloader</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
   <package name="Default" full_name="Default"/>
   <namespace name="Orno" full_name="Orno">
     <namespace name="Db" full_name="Orno\Db">
@@ -1503,6 +1768,7 @@ before returning an instance of the item&lt;/p&gt;</long-description>
       <namespace name="Exception" full_name="Orno\Db\Exception"/>
     </namespace>
     <namespace name="Di" full_name="Orno\Di"/>
+    <namespace name="Loader" full_name="Orno\Loader"/>
   </namespace>
   <marker count="0">todo</marker>
   <marker count="0">fixme</marker>
