@@ -2679,7 +2679,7 @@ a route based hook event&lt;/p&gt;</long-description>
   <file path="mvc/src/Orno/Mvc/View/AbstractRenderer.php" hash="3e1e7d4b703eabbb10f4943b16c49efb" package="Default">
     <docblock line="2">
       <description>The Orno Component Library</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
       <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
     </docblock>
@@ -2700,7 +2700,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <default>array()</default>
         <docblock line="25">
           <description>An array of layout paths</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="25" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -2711,7 +2711,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <default>array()</default>
         <docblock line="32">
           <description>An array of view script location paths</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="32" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -2722,7 +2722,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <default>array()</default>
         <docblock line="39">
           <description>An array of data to be accessible by the view script</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="39" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -2733,7 +2733,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <default>array()</default>
         <docblock line="46">
           <description>An array of regions stored in the view stack</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="46" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -2755,7 +2755,7 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="61">
           <name>$paths</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2774,7 +2774,7 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="76">
           <name>$layouts</name>
-          <default></default>
+          <default/>
           <type>array</type>
         </argument>
       </method>
@@ -2843,7 +2843,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>__call</full_name>
         <docblock line="156">
           <description>Magic call method for view helpers</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="156" name="throws" description="" type="\Orno\Mvc\View\Exception\HelperNotFoundException">
             <type by_reference="false">\Orno\Mvc\View\Exception\HelperNotFoundException</type>
           </tag>
@@ -2859,12 +2859,12 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="164">
           <name>$helper</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="164">
           <name>$args</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2873,7 +2873,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>__set</full_name>
         <docblock line="177">
           <description>Set a data value</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="177" name="param" description="" type="string" variable="$key">
             <type by_reference="false">string</type>
           </tag>
@@ -2883,12 +2883,12 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="183">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="183">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2897,7 +2897,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>offsetSet</full_name>
         <docblock line="188">
           <description>Set a data value</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="188" name="param" description="" type="string" variable="$key">
             <type by_reference="false">string</type>
           </tag>
@@ -2907,12 +2907,12 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="194">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="194">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2921,7 +2921,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>__get</full_name>
         <docblock line="199">
           <description>Get a data value</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="199" name="param" description="" type="string" variable="$key">
             <type by_reference="false">string</type>
           </tag>
@@ -2931,7 +2931,7 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="205">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2940,7 +2940,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>offsetGet</full_name>
         <docblock line="210">
           <description>Get a data value</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="210" name="param" description="" type="string" variable="$key">
             <type by_reference="false">string</type>
           </tag>
@@ -2950,7 +2950,7 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="216">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2959,7 +2959,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>__isset</full_name>
         <docblock line="221">
           <description>Check if a data value is set</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="221" name="param" description="" type="string" variable="$key">
             <type by_reference="false">string</type>
           </tag>
@@ -2969,7 +2969,7 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="227">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2978,7 +2978,7 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>offsetExists</full_name>
         <docblock line="232">
           <description>Check if a data value is set</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="232" name="param" description="" type="string" variable="$key">
             <type by_reference="false">string</type>
           </tag>
@@ -2988,7 +2988,7 @@ a route based hook event&lt;/p&gt;</long-description>
         </docblock>
         <argument line="238">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2997,14 +2997,14 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>__unset</full_name>
         <docblock line="243">
           <description>Unset a data value</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="243" name="param" description="" type="string" variable="$key">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
         <argument line="248">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3013,62 +3013,86 @@ a route based hook event&lt;/p&gt;</long-description>
         <full_name>offsetUnset</full_name>
         <docblock line="253">
           <description>Unset a data value</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="253" name="param" description="" type="string" variable="$key">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
         <argument line="258">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
     </class>
   </file>
-  <file path="mvc/src/Orno/Mvc/View/Exception/HelperNotFoundException.php" hash="fd2ae30f1b554426a566730873977c58" package="Default">
-    <class final="false" abstract="false" namespace="Orno\Mvc\View\Exception" line="3" package="Default">
+  <file path="mvc/src/Orno/Mvc/View/Exception/HelperNotFoundException.php" hash="8749ef651eca4f05b7409f062fe9f7b3" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Mvc\View\Exception" line="13" package="Default">
       <extends>\InvalidArgumentException</extends>
       <name>HelperNotFoundException</name>
       <full_name>\Orno\Mvc\View\Exception\HelperNotFoundException</full_name>
+      <docblock line="10">
+        <description>Helper Not Found Exception</description>
+        <long-description></long-description>
+      </docblock>
     </class>
-    <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mvc/src/Orno/Mvc/View/Exception/HelperNotFoundException.php</error>
-      <error line="3" code="50000">No DocBlock was found for \Orno\Mvc\View\Exception\HelperNotFoundException</error>
-    </parse_markers>
   </file>
-  <file path="mvc/src/Orno/Mvc/View/Exception/LayoutNotProvidedException.php" hash="7ed8f84db463bd4a718693001beb9848" package="Default">
-    <class final="false" abstract="false" namespace="Orno\Mvc\View\Exception" line="3" package="Default">
+  <file path="mvc/src/Orno/Mvc/View/Exception/LayoutNotProvidedException.php" hash="4c130232357ee6651e3453395b2db801" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Mvc\View\Exception" line="13" package="Default">
       <extends>\RuntimeException</extends>
       <name>LayoutNotProvidedException</name>
       <full_name>\Orno\Mvc\View\Exception\LayoutNotProvidedException</full_name>
+      <docblock line="10">
+        <description>Layout Not Found Exception</description>
+        <long-description></long-description>
+      </docblock>
     </class>
-    <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mvc/src/Orno/Mvc/View/Exception/LayoutNotProvidedException.php</error>
-      <error line="3" code="50000">No DocBlock was found for \Orno\Mvc\View\Exception\LayoutNotProvidedException</error>
-    </parse_markers>
   </file>
-  <file path="mvc/src/Orno/Mvc/View/Exception/RegionNotProvidedException.php" hash="b883889953c5923f987443fb74e30dcc" package="Default">
-    <class final="false" abstract="false" namespace="Orno\Mvc\View\Exception" line="3" package="Default">
+  <file path="mvc/src/Orno/Mvc/View/Exception/RegionNotProvidedException.php" hash="bcfc41f4ad7dd40486d969f8aac115fd" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Mvc\View\Exception" line="13" package="Default">
       <extends>\InvalidArgumentException</extends>
       <name>RegionNotProvidedException</name>
       <full_name>\Orno\Mvc\View\Exception\RegionNotProvidedException</full_name>
+      <docblock line="10">
+        <description>Region Not Provided Exception</description>
+        <long-description></long-description>
+      </docblock>
     </class>
-    <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mvc/src/Orno/Mvc/View/Exception/RegionNotProvidedException.php</error>
-      <error line="3" code="50000">No DocBlock was found for \Orno\Mvc\View\Exception\RegionNotProvidedException</error>
-    </parse_markers>
   </file>
-  <file path="mvc/src/Orno/Mvc/View/Exception/ViewPathNotProvidedException.php" hash="880933c9e0e563eab50e1d505ed8deb9" package="Default">
-    <class final="false" abstract="false" namespace="Orno\Mvc\View\Exception" line="3" package="Default">
+  <file path="mvc/src/Orno/Mvc/View/Exception/ViewPathNotProvidedException.php" hash="8fb8b0bc8cc3d50edd30f6b2979db55b" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Mvc\View\Exception" line="13" package="Default">
       <extends>\RuntimeException</extends>
       <name>ViewPathNotProvidedException</name>
       <full_name>\Orno\Mvc\View\Exception\ViewPathNotProvidedException</full_name>
+      <docblock line="10">
+        <description>View Path Not Provided Exception</description>
+        <long-description></long-description>
+      </docblock>
     </class>
-    <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mvc/src/Orno/Mvc/View/Exception/ViewPathNotProvidedException.php</error>
-      <error line="3" code="50000">No DocBlock was found for \Orno\Mvc\View\Exception\ViewPathNotProvidedException</error>
-    </parse_markers>
   </file>
   <file path="mvc/src/Orno/Mvc/View/JsonRenderer.php" hash="dd7f27624dabe5c9c8253987859bcc7f" package="Default">
     <docblock line="2">
