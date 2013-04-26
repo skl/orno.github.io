@@ -1,0 +1,437 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Orno\Mvc\View\JsonRenderer</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Orno.html"><i class="icon-th"></i> Orno</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">15</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">1</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method___call" title="__call :: Magic call method for view helpers"><span class="description">Magic call method for view helpers</span><pre>__call()</pre></a></li>
+<li class="method public inherited"><a href="#method___get" title="__get :: Get a data value"><span class="description">Get a data value</span><pre>__get()</pre></a></li>
+<li class="method public inherited"><a href="#method___isset" title="__isset :: Check if a data value is set"><span class="description">Check if a data value is set</span><pre>__isset()</pre></a></li>
+<li class="method public inherited"><a href="#method___set" title="__set :: Set a data value"><span class="description">Set a data value</span><pre>__set()</pre></a></li>
+<li class="method public inherited"><a href="#method___unset" title="__unset :: Unset a data value"><span class="description">Unset a data value</span><pre>__unset()</pre></a></li>
+<li class="method public inherited"><a href="#method_addLayout" title="addLayout :: Add Layout"><span class="description">Add Layout</span><pre>addLayout()</pre></a></li>
+<li class="method public inherited"><a href="#method_addViewPath" title="addViewPath :: Add View Path"><span class="description">Add View Path</span><pre>addViewPath()</pre></a></li>
+<li class="method public inherited"><a href="#method_offsetExists" title="offsetExists :: Check if a data value is set"><span class="description">Check if a data value is set</span><pre>offsetExists()</pre></a></li>
+<li class="method public inherited"><a href="#method_offsetGet" title="offsetGet :: Get a data value"><span class="description">Get a data value</span><pre>offsetGet()</pre></a></li>
+<li class="method public inherited"><a href="#method_offsetSet" title="offsetSet :: Set a data value"><span class="description">Set a data value</span><pre>offsetSet()</pre></a></li>
+<li class="method public inherited"><a href="#method_offsetUnset" title="offsetUnset :: Unset a data value"><span class="description">Unset a data value</span><pre>offsetUnset()</pre></a></li>
+<li class="method public inherited"><a href="#method_region" title="region :: Region"><span class="description">Region</span><pre>region()</pre></a></li>
+<li class="method public "><a href="#method_render" title="render :: Render"><span class="description">Render</span><pre>render()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property_data" title="$data :: An array of data to be accessible by the view script"><span class="description"></span><pre>$data</pre></a></li>
+<li class="property protected inherited"><a href="#property_layouts" title="$layouts :: An array of layout paths"><span class="description"></span><pre>$layouts</pre></a></li>
+<li class="property protected inherited"><a href="#property_paths" title="$paths :: An array of view script location paths"><span class="description"></span><pre>$paths</pre></a></li>
+<li class="property protected inherited"><a href="#property_regions" title="$regions :: An array of regions stored in the view stack"><span class="description"></span><pre>$regions</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Orno\Mvc\View\JsonRenderer"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Orno.html">Orno</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Orno.Mvc.html">Mvc</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Orno.Mvc.View.html">View</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Orno.Mvc.View.JsonRenderer.html">JsonRenderer</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Abstract Renderer</p>
+<div class="details">
+<div class="long_description"><p>Abstracttion of shared view renderer functionality</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___call"></a><div class="element clickable method public method___call" data-toggle="collapse" data-target=".method___call .collapse">
+<h2>Magic call method for view helpers</h2>
+<pre>__call(string $helper, array $args) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::__call()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$helper</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Orno.Mvc.View.Exception.HelperNotFoundException.html">\Orno\Mvc\View\Exception\HelperNotFoundException</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Get a data value</h2>
+<pre>__get(string $key) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::__get()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___isset"></a><div class="element clickable method public method___isset" data-toggle="collapse" data-target=".method___isset .collapse">
+<h2>Check if a data value is set</h2>
+<pre>__isset(string $key) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::__isset()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Set a data value</h2>
+<pre>__set(string $key, mixed $value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::__set()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method___unset"></a><div class="element clickable method public method___unset" data-toggle="collapse" data-target=".method___unset .collapse">
+<h2>Unset a data value</h2>
+<pre>__unset(string $key) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::__unset()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_addLayout"></a><div class="element clickable method public method_addLayout" data-toggle="collapse" data-target=".method_addLayout .collapse">
+<h2>Add Layout</h2>
+<pre>addLayout(array $layouts) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Add a layout to the Renderer object</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::addLayout()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$layouts</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_addViewPath"></a><div class="element clickable method public method_addViewPath" data-toggle="collapse" data-target=".method_addViewPath .collapse">
+<h2>Add View Path</h2>
+<pre>addViewPath(string | array $paths) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Append a path to the view script path stack</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::addViewPath()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$paths</h4>
+<code>string</code><code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_offsetExists"></a><div class="element clickable method public method_offsetExists" data-toggle="collapse" data-target=".method_offsetExists .collapse">
+<h2>Check if a data value is set</h2>
+<pre>offsetExists(string $key) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::offsetExists()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_offsetGet"></a><div class="element clickable method public method_offsetGet" data-toggle="collapse" data-target=".method_offsetGet .collapse">
+<h2>Get a data value</h2>
+<pre>offsetGet(string $key) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::offsetGet()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_offsetSet"></a><div class="element clickable method public method_offsetSet" data-toggle="collapse" data-target=".method_offsetSet .collapse">
+<h2>Set a data value</h2>
+<pre>offsetSet(string $key, mixed $value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::offsetSet()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_offsetUnset"></a><div class="element clickable method public method_offsetUnset" data-toggle="collapse" data-target=".method_offsetUnset .collapse">
+<h2>Unset a data value</h2>
+<pre>offsetUnset(string $key) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::offsetUnset()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_region"></a><div class="element clickable method public method_region" data-toggle="collapse" data-target=".method_region .collapse">
+<h2>Region</h2>
+<pre>region(string $region, string $content, array $data) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Set or write to a region</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::region()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$region</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$content</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code><a href="../classes/Orno.Mvc.View.Exception.RegionNotProvidedException.html">\Orno\Mvc\View\Exception\RegionNotProvidedException</a></code></th>
+<td></td>
+</tr>
+<tr>
+<th><code><a href="../classes/Orno.Mvc.View.Exception.ViewPathNotProvidedException.html">\Orno\Mvc\View\Exception\ViewPathNotProvidedException</a></code></th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse">
+<h2>Render</h2>
+<pre>render(string $layout) : \Symfony\Component\HttpFoundation\Response</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Render a view with an optional chanbge of layout</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$layout</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Symfony\Component\HttpFoundation\Response</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_data"> </a><div class="element clickable property protected property_data" data-toggle="collapse" data-target=".property_data .collapse">
+<h2></h2>
+<pre>$data : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::$$data</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_layouts"> </a><div class="element clickable property protected property_layouts" data-toggle="collapse" data-target=".property_layouts .collapse">
+<h2></h2>
+<pre>$layouts : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::$$layouts</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_paths"> </a><div class="element clickable property protected property_paths" data-toggle="collapse" data-target=".property_paths .collapse">
+<h2></h2>
+<pre>$paths : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::$$paths</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_regions"> </a><div class="element clickable property protected property_regions" data-toggle="collapse" data-target=".property_regions .collapse">
+<h2></h2>
+<pre>$regions : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Orno\Mvc\View\AbstractRenderer::$$regions</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-26T14:08:36+01:00.<br></footer></div>
+</div>
+</body>
+</html>

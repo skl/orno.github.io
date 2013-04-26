@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>phpDocumentor » \Orno\Db\Exception\NoResourceException</title>
+<title>phpDocumentor » \Orno\Mvc\Controller\RestfulControllerInterface</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -54,27 +54,93 @@
 <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
-<ul class="side-nav nav nav-list"></ul>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_create" title="create :: Restful Create Action"><span class="description">Restful Create Action</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete :: Restful Delete Action"><span class="description">Restful Delete Action</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_get" title="get :: Restful Get One Action"><span class="description">Restful Get One Action</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_getAll" title="getAll :: Restful Get All Action"><span class="description">Restful Get All Action</span><pre>getAll()</pre></a></li>
+<li class="method public "><a href="#method_update" title="update :: Restful Update Action"><span class="description">Restful Update Action</span><pre>update()</pre></a></li>
+</ul>
+</li></ul>
 </div>
 <div class="span8">
-<a id="\Orno\Db\Exception\NoResourceException"></a><ul class="breadcrumb">
+<a id="\Orno\Mvc\Controller\RestfulControllerInterface"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/Orno.html">Orno</a></li>
 <li>
-<span class="divider">\</span><a href="../namespaces/Orno.Db.html">Db</a>
+<span class="divider">\</span><a href="../namespaces/Orno.Mvc.html">Mvc</a>
 </li>
 <li>
-<span class="divider">\</span><a href="../namespaces/Orno.Db.Exception.html">Exception</a>
+<span class="divider">\</span><a href="../namespaces/Orno.Mvc.Controller.html">Controller</a>
 </li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/Orno.Db.Exception.NoResourceException.html">NoResourceException</a>
+<span class="divider">\</span><a href="../classes/Orno.Mvc.Controller.RestfulControllerInterface.html">RestfulControllerInterface</a>
 </li>
 </ul>
-<div class="element class">
-<p class="short_description">no Resource Exception</p>
-<div class="details"><div class="long_description"></div></div>
+<div class="element interface">
+<p class="short_description">Restful Controller Interface</p>
+<div class="details">
+<div class="long_description"><p>Contract to ease creation of RESTful controllers</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>Restful Create Action</h2>
+<pre>create() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>POST /controller</p></div></div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Restful Delete Action</h2>
+<pre>delete(mixed $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>DELETE /controller/(id)</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get" data-toggle="collapse" data-target=".method_get .collapse">
+<h2>Restful Get One Action</h2>
+<pre>get(mixed $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>GET /controller/(id)</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_getAll"></a><div class="element clickable method public method_getAll" data-toggle="collapse" data-target=".method_getAll .collapse">
+<h2>Restful Get All Action</h2>
+<pre>getAll() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>GET /controller</p></div></div></div>
+</div>
+<a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
+<h2>Restful Update Action</h2>
+<pre>update(mixed $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>PUT /controller/(id)
+or
+PATCH /controler/(id)</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+</div>
 </div>
 </div>
 </div>
