@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a12" title="">
+  <file path="db/src/Orno/Db/Driver/DriverInterface.php" hash="da5ce7cf3aa906a530f6303be1cb7f9c" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <interface namespace="Orno\Db\Driver" line="15" package="Default">
+      <name>DriverInterface</name>
+      <full_name>\Orno\Db\Driver\DriverInterface</full_name>
+      <docblock line="10">
+        <description>Driver Interface</description>
+        <long-description>&lt;p&gt;Contract to which all database drivers should conform&lt;/p&gt;</long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="24" package="Default">
+        <name>connect</name>
+        <full_name>connect</full_name>
+        <docblock line="17">
+          <description>Connect</description>
+          <long-description>&lt;p&gt;Connect to the database&lt;/p&gt;</long-description>
+          <tag line="17" name="param" description="" type="array" variable="$config">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="24">
+          <name>$config</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="33" package="Default">
+        <name>disconnect</name>
+        <full_name>disconnect</full_name>
+        <docblock line="26">
+          <description>Disconnect</description>
+          <long-description>&lt;p&gt;Kill the connection to the database&lt;/p&gt;</long-description>
+          <tag line="26" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="42" package="Default">
+        <name>prepareQuery</name>
+        <full_name>prepareQuery</full_name>
+        <docblock line="35">
+          <description>Prepare Query</description>
+          <long-description>&lt;p&gt;Prepare a query statement&lt;/p&gt;</long-description>
+          <tag line="35" name="param" description="" type="string" variable="$query">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="42">
+          <name>$query</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="54" package="Default">
+        <name>bind</name>
+        <full_name>bind</full_name>
+        <docblock line="44">
+          <description>Bind</description>
+          <long-description>&lt;p&gt;Bind the value of a referenced variable to a placeholder in the prepared query&lt;/p&gt;</long-description>
+          <tag line="44" name="param" description="" type="string" variable="$placeholder">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="44" name="param" description="&amp;$value - Referenced variable" type="mixed" variable="$value">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="44" name="param" description="" type="integer" variable="$type">
+            <type by_reference="false">integer</type>
+          </tag>
+          <tag line="44" name="param" description="" type="integer" variable="$maxlen">
+            <type by_reference="false">integer</type>
+          </tag>
+        </docblock>
+        <argument line="54">
+          <name>$placeholder</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="54">
+          <name>$value</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="54">
+          <name>$type</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="54">
+          <name>$maxlen</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="63" package="Default">
+        <name>execute</name>
+        <full_name>execute</full_name>
+        <docblock line="56">
+          <description>Execute</description>
+          <long-description>&lt;p&gt;Execute a prepared query&lt;/p&gt;</long-description>
+          <tag line="56" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="70" package="Default">
+        <name>transaction</name>
+        <full_name>transaction</full_name>
+        <docblock line="65">
+          <description>Transaction</description>
+          <long-description>&lt;p&gt;Begin a transaction&lt;/p&gt;</long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="79" package="Default">
+        <name>commit</name>
+        <full_name>commit</full_name>
+        <docblock line="72">
+          <description>Commit</description>
+          <long-description>&lt;p&gt;Commit all executions made in the current transaction&lt;/p&gt;</long-description>
+          <tag line="72" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="88" package="Default">
+        <name>rollback</name>
+        <full_name>rollback</full_name>
+        <docblock line="81">
+          <description>Rollback</description>
+          <long-description>&lt;p&gt;Rollback all executions made in the current transaction&lt;/p&gt;</long-description>
+          <tag line="81" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="104" package="Default">
+        <name>fetch</name>
+        <full_name>fetch</full_name>
+        <docblock line="90">
+          <description>Fetch</description>
+          <long-description>&lt;p&gt;Return an associative array of the next row in the result set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[
+    $column1 =&gt; $value1,
+    $column2 =&gt; $value2
+]
+&lt;/code&gt;&lt;/pre&gt;</long-description>
+          <tag line="90" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="113" package="Default">
+        <name>fetchObject</name>
+        <full_name>fetchObject</full_name>
+        <docblock line="106">
+          <description>Fetch Object</description>
+          <long-description>&lt;p&gt;Return a stdClass object of the next row in the result set&lt;/p&gt;</long-description>
+          <tag line="106" name="return" description="" type="object">
+            <type by_reference="false">object</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="135" package="Default">
+        <name>fetchAll</name>
+        <full_name>fetchAll</full_name>
+        <docblock line="115">
+          <description>Fetch All</description>
+          <long-description>&lt;p&gt;Return a multi-deminesional array of all rows from the result set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[
+    0 =&gt; [
+        $column1 =&gt; $value1,
+        $column2 =&gt; $value2
+    ],
+    1 =&gt; [
+        $column1 =&gt; $value1,
+        $column2 =&gt; $value2
+    ]
+]
+&lt;/code&gt;&lt;/pre&gt;</long-description>
+          <tag line="115" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </interface>
+  </file>
+  <file path="db/src/Orno/Db/Driver/Oci8.php" hash="f35f1581c033e864d0cb325bce55024b" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Db\Driver" line="22" package="Default">
+      <extends/>
+      <implements>\Orno\Db\Driver\DriverInterface</implements>
+      <name>Oci8</name>
+      <full_name>\Orno\Db\Driver\Oci8</full_name>
+      <docblock line="12">
+        <description>Oci8 Driver</description>
+        <long-description>&lt;p&gt;A database abstraction for PHP OCI8 functionality.&lt;/p&gt;
+
+&lt;p&gt;Note: It is recommended, for performance improvements, to set the oci8.default_prefetch
+option in your php.ini. This will significantly improve network performance as it
+will reduce the number of round trips on the network by buffering rows into the SLQ*Net
+transport cache.&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="29" namespace="Orno\Db\Driver" package="Default">
+        <name>$connection</name>
+        <default></default>
+        <docblock line="24">
+          <description>The Oci8 Connection Resource</description>
+          <long-description></long-description>
+          <tag line="24" name="var" description="" type="resource">
+            <type by_reference="false">resource</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="36" namespace="Orno\Db\Driver" package="Default">
+        <name>$statement</name>
+        <default></default>
+        <docblock line="31">
+          <description>The Statement Resource</description>
+          <long-description></long-description>
+          <tag line="31" name="var" description="" type="resource">
+            <type by_reference="false">resource</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="43" namespace="Orno\Db\Driver" package="Default">
+        <name>$autoCommit</name>
+        <default>false</default>
+        <docblock line="38">
+          <description>Should executions be auto commited?</description>
+          <long-description></long-description>
+          <tag line="38" name="var" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="51" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="45">
+          <description>Constructor</description>
+          <long-description></long-description>
+          <tag line="45" name="throws" description="" type="\Orno\Db\Exception\UnsupportedException">
+            <type by_reference="false">\Orno\Db\Exception\UnsupportedException</type>
+          </tag>
+          <tag line="45" name="param" description="" type="array" variable="$config">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="51">
+          <name>$config</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="69" package="Default">
+        <name>connect</name>
+        <full_name>connect</full_name>
+        <docblock line="62">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="62" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
+            <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
+          </tag>
+          <tag line="62" name="param" description="" type="array" variable="$config">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="62" name="return" description="" type="\Orno\Db\Driver\Oci8">
+            <type by_reference="false">\Orno\Db\Driver\Oci8</type>
+          </tag>
+        </docblock>
+        <argument line="69">
+          <name>$config</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="97" package="Default">
+        <name>disconnect</name>
+        <full_name>disconnect</full_name>
+        <docblock line="92">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="92" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="114" package="Default">
+        <name>prepareQuery</name>
+        <full_name>prepareQuery</full_name>
+        <docblock line="107">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="107" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
+            <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
+          </tag>
+          <tag line="107" name="param" description="" type="string" variable="$query">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="107" name="return" description="" type="\Orno\Db\Driver\Oci8">
+            <type by_reference="false">\Orno\Db\Driver\Oci8</type>
+          </tag>
+        </docblock>
+        <argument line="114">
+          <name>$query</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="135" package="Default">
+        <name>bind</name>
+        <full_name>bind</full_name>
+        <docblock line="124">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="124" name="throws" description="" type="\Orno\Db\Exception\BindingException">
+            <type by_reference="false">\Orno\Db\Exception\BindingException</type>
+          </tag>
+          <tag line="124" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+          <tag line="124" name="param" description="" type="\Orno\Db\Driver\miced" variable="$placeholder">
+            <type by_reference="false">\Orno\Db\Driver\miced</type>
+          </tag>
+          <tag line="124" name="param" description="" type="mixed" variable="$value">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="124" name="param" description="" type="integer" variable="$type">
+            <type by_reference="false">integer</type>
+          </tag>
+          <tag line="124" name="param" description="" type="integer" variable="$maxlen">
+            <type by_reference="false">integer</type>
+          </tag>
+          <tag line="124" name="return" description="" type="\Orno\Db\Driver\Oci8">
+            <type by_reference="false">\Orno\Db\Driver\Oci8</type>
+          </tag>
+        </docblock>
+        <argument line="135">
+          <name>$placeholder</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="135">
+          <name>$value</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="135">
+          <name>$type</name>
+          <default>SQLT_CHR</default>
+          <type/>
+        </argument>
+        <argument line="135">
+          <name>$maxlen</name>
+          <default>-1</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="158" package="Default">
+        <name>execute</name>
+        <full_name>execute</full_name>
+        <docblock line="152">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="152" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+          <tag line="152" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="174" package="Default">
+        <name>transaction</name>
+        <full_name>transaction</full_name>
+        <docblock line="169">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="169" name="return" description="" type="\Orno\Db\Driver\Oci8">
+            <type by_reference="false">\Orno\Db\Driver\Oci8</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Orno\Db\Driver" line="186" package="Default">
+        <name>setAutoCommit</name>
+        <full_name>setAutoCommit</full_name>
+        <docblock line="180">
+          <description>Set Auto Commit</description>
+          <long-description></long-description>
+          <tag line="180" name="param" description="" type="boolean" variable="$bool">
+            <type by_reference="false">boolean</type>
+          </tag>
+          <tag line="180" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="186">
+          <name>$bool</name>
+          <default>false</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Orno\Db\Driver" line="198" package="Default">
+        <name>isAutoCommit</name>
+        <full_name>isAutoCommit</full_name>
+        <docblock line="191">
+          <description>Is Auto Commit?</description>
+          <long-description>&lt;p&gt;Checks if executions should be auto commited&lt;/p&gt;</long-description>
+          <tag line="191" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="206" package="Default">
+        <name>commit</name>
+        <full_name>commit</full_name>
+        <docblock line="203">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="214" package="Default">
+        <name>rollback</name>
+        <full_name>rollback</full_name>
+        <docblock line="211">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="224" package="Default">
+        <name>fetch</name>
+        <full_name>fetch</full_name>
+        <docblock line="219">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="219" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="240" package="Default">
+        <name>fetchObject</name>
+        <full_name>fetchObject</full_name>
+        <docblock line="235">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="235" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="256" package="Default">
+        <name>fetchAll</name>
+        <full_name>fetchAll</full_name>
+        <docblock line="251">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="251" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="db/src/Orno/Db/Driver/Pdo.php" hash="3bbcb5be1549f47d2c7b71c605ab15a7" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Db\Driver" line="17" package="Default">
+      <extends/>
+      <implements>\Orno\Db\Driver\DriverInterface</implements>
+      <name>Pdo</name>
+      <full_name>\Orno\Db\Driver\Pdo</full_name>
+      <docblock line="12">
+        <description>PDO Driver</description>
+        <long-description>&lt;p&gt;A database abstraction for PHP PDO driver&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="24" namespace="Orno\Db\Driver" package="Default">
+        <name>$connection</name>
+        <default></default>
+        <docblock line="19">
+          <description>The Oci8 Connection Resource</description>
+          <long-description></long-description>
+          <tag line="19" name="var" description="" type="resource">
+            <type by_reference="false">resource</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="31" namespace="Orno\Db\Driver" package="Default">
+        <name>$statement</name>
+        <default></default>
+        <docblock line="26">
+          <description>The Statement Resource</description>
+          <long-description></long-description>
+          <tag line="26" name="var" description="" type="resource">
+            <type by_reference="false">resource</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="39" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="33">
+          <description>Constructor</description>
+          <long-description></long-description>
+          <tag line="33" name="throws" description="" type="\Orno\Db\Exception\UnsupportedException">
+            <type by_reference="false">\Orno\Db\Exception\UnsupportedException</type>
+          </tag>
+          <tag line="33" name="param" description="" type="array" variable="$config">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="39">
+          <name>$config</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="57" package="Default">
+        <name>connect</name>
+        <full_name>connect</full_name>
+        <docblock line="50">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="50" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
+            <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
+          </tag>
+          <tag line="50" name="param" description="" type="array" variable="$config">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="50" name="return" description="" type="\Orno\Db\Driver\Pdo">
+            <type by_reference="false">\Orno\Db\Driver\Pdo</type>
+          </tag>
+        </docblock>
+        <argument line="57">
+          <name>$config</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="88" package="Default">
+        <name>disconnect</name>
+        <full_name>disconnect</full_name>
+        <docblock line="83">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="83" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="101" package="Default">
+        <name>prepareQuery</name>
+        <full_name>prepareQuery</full_name>
+        <docblock line="94">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="94" name="throws" description="" type="\Orno\Db\Exception\ConnectionException">
+            <type by_reference="false">\Orno\Db\Exception\ConnectionException</type>
+          </tag>
+          <tag line="94" name="param" description="" type="string" variable="$query">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="94" name="return" description="" type="\Orno\Db\Driver\Pdo">
+            <type by_reference="false">\Orno\Db\Driver\Pdo</type>
+          </tag>
+        </docblock>
+        <argument line="101">
+          <name>$query</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="123" package="Default">
+        <name>bind</name>
+        <full_name>bind</full_name>
+        <docblock line="112">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="112" name="throws" description="" type="\Orno\Db\Exception\BindingException">
+            <type by_reference="false">\Orno\Db\Exception\BindingException</type>
+          </tag>
+          <tag line="112" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+          <tag line="112" name="param" description="" type="mixed" variable="$placeholder">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="112" name="param" description="" type="mixed" variable="$value">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="112" name="param" description="" type="integer" variable="$type">
+            <type by_reference="false">integer</type>
+          </tag>
+          <tag line="112" name="param" description="" type="integer" variable="$maxlen">
+            <type by_reference="false">integer</type>
+          </tag>
+          <tag line="112" name="return" description="" type="\Orno\Db\Driver\Pdo">
+            <type by_reference="false">\Orno\Db\Driver\Pdo</type>
+          </tag>
+        </docblock>
+        <argument line="123">
+          <name>$placeholder</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="123">
+          <name>$value</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="123">
+          <name>$type</name>
+          <default>\PDO::PARAM_STR</default>
+          <type/>
+        </argument>
+        <argument line="123">
+          <name>$maxlen</name>
+          <default>0</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="150" package="Default">
+        <name>execute</name>
+        <full_name>execute</full_name>
+        <docblock line="144">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="144" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+          <tag line="144" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="166" package="Default">
+        <name>transaction</name>
+        <full_name>transaction</full_name>
+        <docblock line="161">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="161" name="return" description="" type="\Orno\Db\Driver\Pdo">
+            <type by_reference="false">\Orno\Db\Driver\Pdo</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="175" package="Default">
+        <name>commit</name>
+        <full_name>commit</full_name>
+        <docblock line="172">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="183" package="Default">
+        <name>rollback</name>
+        <full_name>rollback</full_name>
+        <docblock line="180">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="193" package="Default">
+        <name>fetch</name>
+        <full_name>fetch</full_name>
+        <docblock line="188">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="188" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="209" package="Default">
+        <name>fetchObject</name>
+        <full_name>fetchObject</full_name>
+        <docblock line="204">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="204" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db\Driver" line="225" package="Default">
+        <name>fetchAll</name>
+        <full_name>fetchAll</full_name>
+        <docblock line="220">
+          <description>{@inheritdoc}</description>
+          <long-description></long-description>
+          <tag line="220" name="throws" description="" type="\Orno\Db\Exception\NoResourceException">
+            <type by_reference="false">\Orno\Db\Exception\NoResourceException</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="db/src/Orno/Db/Exception/BindingException.php" hash="33ebee50953365a2f14277a8bd4a3a45" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description/>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Db\Exception" line="13" package="Default">
+      <extends>\Exception</extends>
+      <name>BindingException</name>
+      <full_name>\Orno\Db\Exception\BindingException</full_name>
+      <docblock line="10">
+        <description>Binding Exception</description>
+        <long-description/>
+      </docblock>
+    </class>
+  </file>
+  <file path="db/src/Orno/Db/Exception/ConnectionException.php" hash="2c6653629975c61f439a1b47b7c6129a" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description/>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Db\Exception" line="13" package="Default">
+      <extends>\RuntimeException</extends>
+      <name>ConnectionException</name>
+      <full_name>\Orno\Db\Exception\ConnectionException</full_name>
+      <docblock line="10">
+        <description>Connection Exception</description>
+        <long-description/>
+      </docblock>
+    </class>
+  </file>
+  <file path="db/src/Orno/Db/Exception/NoResourceException.php" hash="69e7d63b12943b5b5cc390b8d8c64317" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description/>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Db\Exception" line="13" package="Default">
+      <extends>\BadMethodCallException</extends>
+      <name>NoResourceException</name>
+      <full_name>\Orno\Db\Exception\NoResourceException</full_name>
+      <docblock line="10">
+        <description>no Resource Exception</description>
+        <long-description/>
+      </docblock>
+    </class>
+  </file>
+  <file path="db/src/Orno/Db/Exception/UnsupportedException.php" hash="6d5bc4dad02c8c7b2a839d4184bffabe" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description/>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Db\Exception" line="13" package="Default">
+      <extends>\Exception</extends>
+      <name>UnsupportedException</name>
+      <full_name>\Orno\Db\Exception\UnsupportedException</full_name>
+      <docblock line="10">
+        <description>Driver Not Supported Exception</description>
+        <long-description/>
+      </docblock>
+    </class>
+  </file>
+  <file path="db/src/Orno/Db/Query.php" hash="3f77fb83dae696051cae3f14be9047a5" package="Default">
+    <docblock line="2">
+      <description>The Orno Component Library</description>
+      <long-description></long-description>
+      <tag line="2" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="2" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Db" line="16" package="Default">
+      <extends/>
+      <name>Query</name>
+      <full_name>\Orno\Db\Query</full_name>
+      <docblock line="10">
+        <description>Query</description>
+        <long-description>&lt;p&gt;Object to handle calls to database driver objects, provides an interface to write
+ANSI/ISO SQL without object oriented query building with support for transactions.&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="23" namespace="Orno\Db" package="Default">
+        <name>$driver</name>
+        <default></default>
+        <docblock line="18">
+          <description>Database connection driver</description>
+          <long-description></long-description>
+          <tag line="18" name="var" description="" type="\Orno\Db\Driver\DriverInterface">
+            <type by_reference="false">\Orno\Db\Driver\DriverInterface</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Db" line="30" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="25">
+          <description>Constructor</description>
+          <long-description></long-description>
+          <tag line="25" name="param" description="" type="\Orno\Db\Driver\DriverInterface" variable="$driver">
+            <type by_reference="false">\Orno\Db\Driver\DriverInterface</type>
+          </tag>
+        </docblock>
+        <argument line="30">
+          <name>$driver</name>
+          <default></default>
+          <type>\Orno\Db\Driver\DriverInterface</type>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="di/src/Orno/Di/Container.php" hash="33c2900245d2f5ad6c069083158e0b01" package="Default">
+    <docblock line="3">
+      <description>The Orno Component Library</description>
+      <long-description/>
+      <tag line="3" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="3" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Di" line="21" package="Default">
+      <extends/>
+      <implements>\Orno\Di\ContainerInterface</implements>
+      <implements>\ArrayAccess</implements>
+      <name>Container</name>
+      <full_name>\Orno\Di\Container</full_name>
+      <docblock line="16">
+        <description>Container</description>
+        <long-description>&lt;p&gt;A Dependency Injection Container.&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="true" visibility="protected" line="28" namespace="Orno\Di" package="Default">
+        <name>$instance</name>
+        <default>null</default>
+        <docblock line="23">
+          <description>Sad but true static instance</description>
+          <long-description/>
+          <tag line="23" name="var" description="" type="\Orno\Di\Orno\Di\Container">
+            <type by_reference="false">\Orno\Di\Orno\Di\Container</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="35" namespace="Orno\Di" package="Default">
+        <name>$values</name>
+        <default>array()</default>
+        <docblock line="30">
+          <description>Items registered with the container</description>
+          <long-description/>
+          <tag line="30" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="42" namespace="Orno\Di" package="Default">
+        <name>$shared</name>
+        <default>array()</default>
+        <docblock line="37">
+          <description>Shared instances</description>
+          <long-description/>
+          <tag line="37" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="49" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="44">
+          <description>Constructor</description>
+          <long-description/>
+          <tag line="44" name="param" description="" type="array" variable="$config">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="49">
+          <name>$config</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Orno\Di" line="63" package="Default">
+        <name>getContainer</name>
+        <full_name>getContainer</full_name>
+        <docblock line="58">
+          <description>Singleton method :-(</description>
+          <long-description/>
+          <tag line="58" name="return" description="$this" type="\Orno\Di\Container">
+            <type by_reference="false">\Orno\Di\Container</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="80" package="Default">
+        <name>setConfig</name>
+        <full_name>setConfig</full_name>
+        <docblock line="72">
+          <description>Set Config</description>
+          <long-description>&lt;p&gt;Provide configuration for the container instance&lt;/p&gt;</long-description>
+          <tag line="72" name="param" description="" type="array" variable="$config">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="72" name="return" description="$this" type="\Orno\Di\Container">
+            <type by_reference="false">\Orno\Di\Container</type>
+          </tag>
+        </docblock>
+        <argument line="80">
+          <name>$config</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="115" package="Default">
+        <name>register</name>
+        <full_name>register</full_name>
+        <docblock line="103">
+          <description>Register</description>
+          <long-description>&lt;p&gt;Register a class name, closure or fully configured item with the container,
+we will handle dependencies at the time it is requested&lt;/p&gt;</long-description>
+          <tag line="103" name="param" description="" type="string" variable="$alias">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="103" name="param" description="" type="mixed" variable="$object">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="103" name="param" description="" type="boolean" variable="$shared">
+            <type by_reference="false">boolean</type>
+          </tag>
+          <tag line="103" name="param" description="" type="boolean" variable="$auto">
+            <type by_reference="false">boolean</type>
+          </tag>
+          <tag line="103" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="115">
+          <name>$alias</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="115">
+          <name>$object</name>
+          <default>null</default>
+          <type/>
+        </argument>
+        <argument line="115">
+          <name>$shared</name>
+          <default>false</default>
+          <type/>
+        </argument>
+        <argument line="115">
+          <name>$auto</name>
+          <default>false</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="151" package="Default">
+        <name>registered</name>
+        <full_name>registered</full_name>
+        <docblock line="143">
+          <description>Registered</description>
+          <long-description>&lt;p&gt;Check if an alias is registered with the container&lt;/p&gt;</long-description>
+          <tag line="143" name="param" description="" type="string" variable="$key">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="143" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="151">
+          <name>$key</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="165" package="Default">
+        <name>resolve</name>
+        <full_name>resolve</full_name>
+        <docblock line="156">
+          <description>Resolve</description>
+          <long-description>&lt;p&gt;Resolve and return the requested item&lt;/p&gt;</long-description>
+          <tag line="156" name="param" description="" type="string" variable="$alias">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="156" name="param" description="" type="array" variable="$args">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="156" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="165">
+          <name>$alias</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="165">
+          <name>$args</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="210" package="Default">
+        <name>build</name>
+        <full_name>build</full_name>
+        <docblock line="202">
+          <description>Build</description>
+          <long-description>&lt;p&gt;Builds an object and injects constructor arguments&lt;/p&gt;</long-description>
+          <tag line="202" name="param" description="" type="string" variable="$object">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="202" name="return" description="" type="object">
+            <type by_reference="false">object</type>
+          </tag>
+        </docblock>
+        <argument line="210">
+          <name>$object</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="240" package="Default">
+        <name>dependencies</name>
+        <full_name>dependencies</full_name>
+        <docblock line="229">
+          <description>Dependencies</description>
+          <long-description>&lt;p&gt;Recursively resolve dependencies, and dependencies of dependencies etc.. etc..
+Will first check if the parameters type hint is instantiable and resolve that, if
+not it will attempt to resolve an implementation from the param annotation&lt;/p&gt;</long-description>
+          <tag line="229" name="param" description="" type="string" variable="$object">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="229" name="param" description="" type="array" variable="$params">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="229" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="240">
+          <name>$object</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="240">
+          <name>$params</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="288" package="Default">
+        <name>getConstructorParams</name>
+        <full_name>getConstructorParams</full_name>
+        <docblock line="279">
+          <description>Get Constructor Parameters</description>
+          <long-description>&lt;p&gt;Accepts an object in string or object form and returns an
+array of param matches from the constructor doc block&lt;/p&gt;</long-description>
+          <tag line="279" name="param" description="" type="string" variable="$object">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="279" name="return" description="" type="array|boolean">
+            <type by_reference="false">array</type>
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="288">
+          <name>$object</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="309" package="Default">
+        <name>offsetGet</name>
+        <full_name>offsetGet</full_name>
+        <docblock line="301">
+          <description>ArrayAccess Get</description>
+          <long-description>&lt;p&gt;Proxy to resolve method&lt;/p&gt;</long-description>
+          <tag line="301" name="param" description="" type="string" variable="$key">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="301" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="309">
+          <name>$key</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="323" package="Default">
+        <name>offsetSet</name>
+        <full_name>offsetSet</full_name>
+        <docblock line="314">
+          <description>ArrayAccess Set</description>
+          <long-description>&lt;p&gt;Proxy to register method&lt;/p&gt;</long-description>
+          <tag line="314" name="param" description="" type="string" variable="$key">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="314" name="param" description="" type="mixed" variable="$value">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="314" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="323">
+          <name>$key</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="323">
+          <name>$value</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="336" package="Default">
+        <name>offsetUnset</name>
+        <full_name>offsetUnset</full_name>
+        <docblock line="328">
+          <description>ArrayAccess Unset</description>
+          <long-description>&lt;p&gt;Destroys an item in the container&lt;/p&gt;</long-description>
+          <tag line="328" name="param" description="" type="string" variable="$key">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="328" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="336">
+          <name>$key</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="349" package="Default">
+        <name>offsetExists</name>
+        <full_name>offsetExists</full_name>
+        <docblock line="341">
+          <description>ArrayAccess Exists</description>
+          <long-description>&lt;p&gt;Proxy to registered method&lt;/p&gt;</long-description>
+          <tag line="341" name="param" description="" type="string" variable="$key">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="341" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="349">
+          <name>$key</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="di/src/Orno/Di/ContainerAwareTrait.php" hash="1b1fcd328b507a92ba24a9443c4d09e2" package="Default">
+    <docblock line="3">
+      <description>The Orno Component Library</description>
+      <long-description/>
+      <tag line="3" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="3" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+  </file>
+  <file path="di/src/Orno/Di/ContainerInterface.php" hash="6a0f74eaaf1cedd912a9e16fc2e775d6" package="Default">
+    <docblock line="3">
+      <description>The Orno Component Library</description>
+      <long-description/>
+      <tag line="3" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="3" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <interface namespace="Orno\Di" line="16" package="Default">
+      <name>ContainerInterface</name>
+      <full_name>\Orno\Di\ContainerInterface</full_name>
+      <docblock line="11">
+        <description>Container Interface</description>
+        <long-description>&lt;p&gt;A contract to provide an implementation of a container&lt;/p&gt;</long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="28" package="Default">
+        <name>register</name>
+        <full_name>register</full_name>
+        <docblock line="18">
+          <description>Register</description>
+          <long-description>&lt;p&gt;Register an item with the container&lt;/p&gt;</long-description>
+          <tag line="18" name="param" description="" type="mixed" variable="$alias">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="18" name="param" description="" type="mixed" variable="$object">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="18" name="param" description="" type="boolean" variable="$shared">
+            <type by_reference="false">boolean</type>
+          </tag>
+          <tag line="18" name="return" description="" type="\Orno\Di\Definition">
+            <type by_reference="false">\Orno\Di\Definition</type>
+          </tag>
+        </docblock>
+        <argument line="28">
+          <name>$alias</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="28">
+          <name>$object</name>
+          <default>null</default>
+          <type/>
+        </argument>
+        <argument line="28">
+          <name>$shared</name>
+          <default>false</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="38" package="Default">
+        <name>resolve</name>
+        <full_name>resolve</full_name>
+        <docblock line="30">
+          <description>Resolve</description>
+          <long-description>&lt;p&gt;Resolve an item from the container&lt;/p&gt;</long-description>
+          <tag line="30" name="param" description="" type="string" variable="$alias">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="30" name="return" description="" type="object">
+            <type by_reference="false">object</type>
+          </tag>
+        </docblock>
+        <argument line="38">
+          <name>$alias</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+    </interface>
+  </file>
+  <file path="di/src/Orno/Di/Definition.php" hash="86fc93ff0ea31b7f1add87bc19946e95" package="Default">
+    <docblock line="3">
+      <description>The Orno Component Library</description>
+      <long-description/>
+      <tag line="3" name="author" description="Phil Bennett @philipobenito"/>
+      <tag line="3" name="license" description="http://www.wtfpl.net/txt/copying/ WTFPL"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Orno\Di" line="22" package="Default">
+      <extends/>
+      <name>Definition</name>
+      <full_name>\Orno\Di\Definition</full_name>
+      <docblock line="15">
+        <description>Definition</description>
+        <long-description>&lt;p&gt;A definition of an item registered with the dependency injection container. Holds
+information regarding constructor injection and any method calls to be invoked
+before returning an instance of the item&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="31" namespace="Orno\Di" package="Default">
+        <name>$class</name>
+        <default/>
+        <docblock line="26">
+          <description>The fully qualified namespace of the instance to return</description>
+          <long-description/>
+          <tag line="26" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="38" namespace="Orno\Di" package="Default">
+        <name>$arguments</name>
+        <default>array()</default>
+        <docblock line="33">
+          <description>Array of constructor arguments to be injected</description>
+          <long-description/>
+          <tag line="33" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="45" namespace="Orno\Di" package="Default">
+        <name>$methods</name>
+        <default>array()</default>
+        <docblock line="40">
+          <description>Array of methods to call before returning the object</description>
+          <long-description/>
+          <tag line="40" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="52" namespace="Orno\Di" package="Default">
+        <name>$auto</name>
+        <default/>
+        <docblock line="47">
+          <description>Does the object need to be auto resolved?</description>
+          <long-description/>
+          <tag line="47" name="var" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="61" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="54">
+          <description>Constructor</description>
+          <long-description/>
+          <tag line="54" name="param" description="" type="string" variable="$class">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="54" name="param" description="" type="\Orno\Di\ContainerInterface" variable="$container">
+            <type by_reference="false">\Orno\Di\ContainerInterface</type>
+          </tag>
+          <tag line="54" name="param" description="" type="boolean" variable="$auto">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="61">
+          <name>$class</name>
+          <default>null</default>
+          <type/>
+        </argument>
+        <argument line="61">
+          <name>$container</name>
+          <default/>
+          <type>\Orno\Di\ContainerInterface</type>
+        </argument>
+        <argument line="61">
+          <name>$auto</name>
+          <default>false</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="75" package="Default">
+        <name>__invoke</name>
+        <full_name>__invoke</full_name>
+        <docblock line="68">
+          <description>Magic Invoke</description>
+          <long-description>&lt;p&gt;Configure and returns the object associated with this definition&lt;/p&gt;</long-description>
+          <tag line="68" name="return" description="" type="object">
+            <type by_reference="false">object</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="97" package="Default">
+        <name>handleConstructorInjection</name>
+        <full_name>handleConstructorInjection</full_name>
+        <docblock line="90">
+          <description>Handle Constructor Injection</description>
+          <long-description>&lt;p&gt;Instantiates the object with any constructor arguments injected&lt;/p&gt;</long-description>
+          <tag line="90" name="return" description="" type="object">
+            <type by_reference="false">object</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="131" package="Default">
+        <name>handleMethodCalls</name>
+        <full_name>handleMethodCalls</full_name>
+        <docblock line="123">
+          <description>Handle Method Calls</description>
+          <long-description>&lt;p&gt;Invokes all methods that are associated with the definition&lt;/p&gt;</long-description>
+          <tag line="123" name="param" description="" type="object" variable="$object">
+            <type by_reference="false">object</type>
+          </tag>
+          <tag line="123" name="return" description="" type="object">
+            <type by_reference="false">object</type>
+          </tag>
+        </docblock>
+        <argument line="131">
+          <name>$object</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="167" package="Default">
+        <name>hasClass</name>
+        <full_name>hasClass</full_name>
+        <docblock line="160">
+          <description>Has Class?</description>
+          <long-description>&lt;p&gt;Checks if the definition has a class associated with it&lt;/p&gt;</long-description>
+          <tag line="160" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="180" package="Default">
+        <name>withArgument</name>
+        <full_name>withArgument</full_name>
+        <docblock line="172">
+          <description>With Argument</description>
+          <long-description>&lt;p&gt;Sets a constructor argument for the definition&lt;/p&gt;</long-description>
+          <tag line="172" name="param" description="" type="mixed" variable="$argument">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="172" name="return" description="" type="\Orno\Di\Definition">
+            <type by_reference="false">\Orno\Di\Definition</type>
+          </tag>
+        </docblock>
+        <argument line="180">
+          <name>$argument</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="195" package="Default">
+        <name>withArguments</name>
+        <full_name>withArguments</full_name>
+        <docblock line="187">
+          <description>With Arguments</description>
+          <long-description>&lt;p&gt;Proxy to withArgument method, accepts an array of arguments&lt;/p&gt;</long-description>
+          <tag line="187" name="param" description="" type="array" variable="$arguments">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="187" name="return" description="" type="\Orno\Di\Definition">
+            <type by_reference="false">\Orno\Di\Definition</type>
+          </tag>
+        </docblock>
+        <argument line="195">
+          <name>$arguments</name>
+          <default/>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="211" package="Default">
+        <name>hasArguments</name>
+        <full_name>hasArguments</full_name>
+        <docblock line="204">
+          <description>Has Arguments?</description>
+          <long-description>&lt;p&gt;Checks if the definition has registered constructor arguments to inject&lt;/p&gt;</long-description>
+          <tag line="204" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="225" package="Default">
+        <name>withMethodCall</name>
+        <full_name>withMethodCall</full_name>
+        <docblock line="216">
+          <description>With Method Call</description>
+          <long-description>&lt;p&gt;Sets a method call for the definition&lt;/p&gt;</long-description>
+          <tag line="216" name="param" description="" type="string" variable="$method">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="216" name="param" description="" type="array" variable="$arguments">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="216" name="return" description="" type="\Orno\Di\Definition">
+            <type by_reference="false">\Orno\Di\Definition</type>
+          </tag>
+        </docblock>
+        <argument line="225">
+          <name>$method</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="225">
+          <name>$arguments</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="243" package="Default">
+        <name>withMethodCalls</name>
+        <full_name>withMethodCalls</full_name>
+        <docblock line="235">
+          <description>With Method Calls</description>
+          <long-description>&lt;p&gt;Proxy to withMethodCall method, accepts array of method calls with method arguments&lt;/p&gt;</long-description>
+          <tag line="235" name="param" description="" type="array" variable="$methods">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="235" name="return" description="" type="\Orno\Di\Definition">
+            <type by_reference="false">\Orno\Di\Definition</type>
+          </tag>
+        </docblock>
+        <argument line="243">
+          <name>$methods</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Orno\Di" line="259" package="Default">
+        <name>hasMethodCalls</name>
+        <full_name>hasMethodCalls</full_name>
+        <docblock line="252">
+          <description>Has Method Calls?</description>
+          <long-description>&lt;p&gt;Checks if this definition has any registered methods to invoke&lt;/p&gt;</long-description>
+          <tag line="252" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <namespace name="Orno" full_name="Orno">
+    <namespace name="Db" full_name="Orno\Db">
+      <namespace name="Driver" full_name="Orno\Db\Driver"/>
+      <namespace name="Exception" full_name="Orno\Db\Exception"/>
+    </namespace>
+    <namespace name="Di" full_name="Orno\Di"/>
+  </namespace>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>
